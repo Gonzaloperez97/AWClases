@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Canine Harmony - Peluquería Canina</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary": "#ffffff",
+                      "surface-container-low": "#f5f3f3",
+                      "on-secondary-fixed": "#0e2000",
+                      "on-tertiary": "#ffffff",
+                      "on-surface": "#1b1c1c",
+                      "surface-tint": "#0060ac",
+                      "secondary-fixed": "#a1fa49",
+                      "on-primary-fixed-variant": "#004883",
+                      "inverse-primary": "#a4c9ff",
+                      "inverse-on-surface": "#f2f0f0",
+                      "on-secondary-container": "#3e7100",
+                      "tertiary-fixed-dim": "#d9c900",
+                      "on-background": "#1b1c1c",
+                      "tertiary-container": "#bbae00",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed-variant": "#4e4800",
+                      "on-tertiary-container": "#464100",
+                      "on-primary-fixed": "#001c39",
+                      "surface-container-high": "#eae8e7",
+                      "secondary-fixed-dim": "#87dc2c",
+                      "outline-variant": "#c1c7d3",
+                      "tertiary": "#686000",
+                      "primary-container": "#2976c7",
+                      "inverse-surface": "#303030",
+                      "secondary": "#3a6a00",
+                      "surface-dim": "#dbd9d9",
+                      "background": "#fbf9f8",
+                      "surface-container-highest": "#e4e2e2",
+                      "outline": "#717783",
+                      "surface-bright": "#fbf9f8",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#d4e3ff",
+                      "on-primary-container": "#fdfcff",
+                      "primary": "#005da7",
+                      "on-surface-variant": "#414751",
+                      "on-secondary-fixed-variant": "#2a5000",
+                      "surface-variant": "#e4e2e2",
+                      "secondary-container": "#a1fa49",
+                      "surface": "#fbf9f8",
+                      "on-error-container": "#93000a",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed-dim": "#a4c9ff",
+                      "on-error": "#ffffff",
+                      "surface-container": "#efeded",
+                      "on-tertiary-fixed": "#1f1c00",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed": "#f7e61a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "md": "24px",
+                      "lg": "40px",
+                      "gutter": "20px",
+                      "sm": "12px",
+                      "base": "8px",
+                      "xl": "64px",
+                      "xs": "4px",
+                      "margin-desktop": "auto",
+                      "max-width": "1200px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-xl": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-lg-mobile": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "label-sm": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-md": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "headline-lg": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 backdrop-blur-md dark:bg-surface-dim/90 fixed top-0 w-full z-50 border-b border-outline-variant/30 dark:border-outline/20 shadow-sm shadow-primary/5">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-lg max-w-max-width mx-auto">
+<div class="flex items-center gap-sm">
+<img alt="Canine Harmony Logo" class="h-10 w-10 rounded-md object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOqvDOJKAf0eY4aA4iFdtiM9ENFi2Kjsnt2Q_NfVD-C5fuQC6DmUOSRk0XdHP5cp-cQcPS0xQIFxk05jQnWlCV75oJX8gob4i8Fx_5nD42v3v9IbvHpKU5xHn-LUqPfc9odX7I97SD4WZcFeKuiWusSsyDdRo0whXPPpHSS-i1psqmYYNKa_9LOsJ8-LOLBM29EXXvS4FTIwpu9LmdGFzCTQMB8D9eFGqXDcNztROvut5jwbRLHZA5yw"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">Canine Harmony</span>
+</div>
+<div class="hidden md:flex items-center gap-md font-label-md text-label-md">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 active:scale-95 transition-transform hover:bg-primary-container/10 transition-all duration-300 px-2 rounded-t-sm" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors active:scale-95 transition-transform hover:bg-primary-container/10 transition-all duration-300 px-2 rounded-sm" href="#servicios">Servicios</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors active:scale-95 transition-transform hover:bg-primary-container/10 transition-all duration-300 px-2 rounded-sm" href="#ubicacion">Contacto</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-lg py-sm rounded-lg hover:bg-primary/90 transition-colors shadow-sm shadow-primary/20 active:scale-95" href="#reserva">
+                Reservar
+            </a>
+<button class="md:hidden text-on-surface p-2 rounded-md hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[80vh] flex items-center bg-surface-container-lowest" id="inicio">
+<div class="absolute inset-0 z-0">
+<div aria-label="Hero background featuring a well-groomed golden retriever in a modern dog salon." class="w-full h-full bg-cover bg-center md:bg-right" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJ9T_EYfGM_L_gEK9jePVTG1u9O-jm0C0boxAE3H_Pd0bV_8ExLqHk8bkpB1bBb44H-toVBG5bIquuyAMjh6PwRebn8qDAwmbbwp-9YwE0UyUVxp0zRX1oyoK0Jgbp--vUj0daJV1zYEnDJFlT3idvV6eSCA6ipesi_B0qjpSDmRXPEYb1wCdHNHuUKeCZcZ8NoOWnJSvDoiLpYxPe47p81qa-8PjUQB5-LjV81AVr4yU6Ul2x3Mtinw')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/70 to-transparent md:w-2/3"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-lg max-w-max-width mx-auto flex flex-col items-start gap-md py-xl md:py-[120px]">
+<div class="bg-primary-container/20 px-sm py-xs rounded-full inline-flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-[16px]" data-weight="fill">verified</span>
+<span class="font-label-sm text-label-sm text-primary">Servicio Premium Garantizado</span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface max-w-2xl">
+                    ¡Tu Mejor Amigo Merece un <span class="text-primary">Día de Spa</span>!
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    En Canine Harmony, transformamos la rutina de aseo en una experiencia relajante y segura. Cuidado profesional con productos hipoalergénicos en un ambiente diseñado para su bienestar.
+                </p>
+<div class="flex flex-col sm:flex-row gap-sm mt-sm w-full sm:w-auto">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-lg py-sm rounded-lg hover:bg-primary/90 transition-colors shadow-sm shadow-primary/20 active:scale-95 w-full sm:w-auto text-center" href="#reserva">
+                        Reservar Turno
+                    </a>
+<a class="inline-flex items-center justify-center border border-outline text-on-surface font-label-md text-label-md px-lg py-sm rounded-lg hover:bg-surface-variant transition-colors active:scale-95 w-full sm:w-auto text-center" href="#servicios">
+                        Ver Servicios
+                    </a>
+</div>
+</div>
+</section>
+<!-- Servicios Section -->
+<section class="w-full py-xl px-margin-mobile md:px-lg bg-background" id="servicios">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Nuestros Servicios</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Tratamientos personalizados diseñados para mantener a tu mascota limpia, sana y feliz, utilizando siempre productos de la más alta calidad.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-md shadow-sm shadow-primary/5 border border-outline-variant/30 flex flex-col hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-md text-on-primary-fixed">
+<span class="material-symbols-outlined" data-weight="fill">shower</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-[20px] mb-xs">Baño y Corte</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Incluye baño con champú premium, secado a mano, corte de raza o a tijera según preferencia, y limpieza de oídos.</p>
+<div class="flex items-end justify-between border-t border-outline-variant/30 pt-sm mt-auto">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Desde</span>
+<span class="font-headline-md text-headline-md text-primary">$35.000 ARS</span>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-md shadow-sm shadow-primary/5 border border-outline-variant/30 flex flex-col hover:border-primary/50 transition-colors relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary text-on-secondary font-label-sm text-label-sm px-sm py-1 rounded-bl-lg">Más Popular</div>
+<div class="w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center mb-md text-on-secondary-container">
+<span class="material-symbols-outlined" data-weight="fill">spa</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-[20px] mb-xs">Higiene Profunda</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Tratamiento deslanado intensivo, baño hidratante, corte higiénico completo, limpieza dental superficial y perfumado suave.</p>
+<div class="flex items-end justify-between border-t border-outline-variant/30 pt-sm mt-auto">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Desde</span>
+<span class="font-headline-md text-headline-md text-primary">$42.000 ARS</span>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-md shadow-sm shadow-primary/5 border border-outline-variant/30 flex flex-col hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-full flex items-center justify-center mb-md text-on-tertiary-fixed">
+<span class="material-symbols-outlined" data-weight="fill">pets</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-[20px] mb-xs">Corte de Uñas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Servicio rápido y seguro de recorte y limado de uñas para prevenir problemas de postura y mantener la higiene de las patas.</p>
+<div class="flex items-end justify-between border-t border-outline-variant/30 pt-sm mt-auto">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Precio Fijo</span>
+<span class="font-headline-md text-headline-md text-primary">$8.000 ARS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reserva Section -->
+<section class="w-full py-xl px-margin-mobile md:px-lg bg-surface-container-low" id="reserva">
+<div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="flex flex-col gap-sm">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Agendá su Turno</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Completá el formulario para reservar el espacio de tu mascota. Te enviaremos una confirmación por WhatsApp en breve.</p>
+<div class="mt-md bg-primary-fixed/30 p-md rounded-xl border border-primary-fixed-dim">
+<div class="flex items-start gap-sm mb-sm">
+<span class="material-symbols-outlined text-primary mt-1">info</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Por favor, indicá si tu mascota tiene alguna alergia o condición especial en los comentarios.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-md md:p-lg rounded-xl shadow-sm shadow-primary/10 border border-outline-variant/20">
+<form class="flex flex-col gap-md">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-label-sm text-on-surface" for="nombre_dueno">Tu Nombre</label>
+<input class="rounded-lg border-outline-variant focus:border-primary focus:ring-primary bg-surface w-full font-body-md text-body-md text-on-surface placeholder:text-outline py-2 px-3" id="nombre_dueno" placeholder="Ej: Juan Pérez" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-label-sm text-on-surface" for="telefono">WhatsApp</label>
+<input class="rounded-lg border-outline-variant focus:border-primary focus:ring-primary bg-surface w-full font-body-md text-body-md text-on-surface placeholder:text-outline py-2 px-3" id="telefono" placeholder="Cod. área + número" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-label-sm text-on-surface" for="raza">Raza de la Mascota</label>
+<input class="rounded-lg border-outline-variant focus:border-primary focus:ring-primary bg-surface w-full font-body-md text-body-md text-on-surface placeholder:text-outline py-2 px-3" id="raza" placeholder="Ej: Caniche, Golden, Mestizo..." type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-label-sm text-on-surface" for="fecha">Fecha Deseada</label>
+<input class="rounded-lg border-outline-variant focus:border-primary focus:ring-primary bg-surface w-full font-body-md text-body-md text-on-surface py-2 px-3 text-outline" id="fecha" type="date"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-sm text-label-sm text-on-surface" for="servicio">Servicio</label>
+<select class="rounded-lg border-outline-variant focus:border-primary focus:ring-primary bg-surface w-full font-body-md text-body-md text-on-surface py-2 px-3" id="servicio">
+<option disabled="" selected="" value="">Seleccioná un servicio</option>
+<option value="bano_corte">Baño y Corte</option>
+<option value="higiene">Higiene Profunda</option>
+<option value="unas">Corte de Uñas</option>
+</select>
+</div>
+</div>
+<button class="mt-sm bg-primary text-on-primary font-label-md text-label-md w-full py-sm rounded-lg hover:bg-primary/90 transition-colors shadow-sm shadow-primary/20 active:scale-95" type="button">
+                            Solicitar Reserva
+                        </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Ubicación Section -->
+<section class="w-full py-xl px-margin-mobile md:px-lg bg-background" id="ubicacion">
+<div class="max-w-max-width mx-auto flex flex-col gap-lg">
+<div class="text-center">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm">Encontranos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Vení a visitarnos a nuestro salón principal.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md h-[400px]">
+<div class="md:col-span-1 bg-surface-container-lowest p-md rounded-xl border border-outline-variant/30 flex flex-col justify-center gap-md">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-weight="fill">location_on</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Dirección</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Av. Siempreviva 742<br/>Ciudad Canina, CP 1234</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-weight="fill">schedule</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Horarios</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Lun a Vie: 09:00 - 18:00<br/>Sábados: 09:00 - 14:00</p>
+</div>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary" data-weight="fill">call</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Contacto</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">+54 9 11 1234-5678</p>
+</div>
+</div>
+</div>
+<!-- Mock Map -->
+<div class="md:col-span-2 bg-surface-variant rounded-xl overflow-hidden border border-outline-variant/30 relative">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist digital map interface showing a stylized city layout, centered on a specific location marker. Light mode, soft pastel colors, subtle modern UI elements, professional and friendly aesthetic." data-location="Ciudad Canina" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_uwpa4yz33r4gBpAe0P1HDLkTBEY6N2OrwPOExHaD1zUFY_MdVN6TnNfa0iDJskQHGsE4_cFrBSLUHGAtMzB_CFrwFPI78uMh4PUyssdeztX1lA2JqDEwETYoEWBVr-Zli_-HKhktCC--99S294H77z5FaI8txI7uZAnSI9Ut93eF4WSAaI-QTnWjntcmykvNa5kg_CjyWGyDv-7cIY64gxhu3q7T6uKJrAYpBpNVfJpX4yqMLN9czg"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-low w-full py-xl text-center border-t border-outline-variant/20">
+<div class="flex flex-col items-center gap-md px-margin-mobile md:px-lg max-w-max-width mx-auto">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface text-[20px]">Canine Harmony</span>
+<div class="flex flex-wrap justify-center gap-md font-body-md text-body-md text-on-surface-variant">
+<a class="hover:text-primary hover:underline transition-all focus:ring-2 focus:ring-primary rounded-sm px-1" href="#">Privacidad</a>
+<a class="hover:text-primary hover:underline transition-all focus:ring-2 focus:ring-primary rounded-sm px-1" href="#">Términos</a>
+<a class="hover:text-primary hover:underline transition-all focus:ring-2 focus:ring-primary rounded-sm px-1" href="#">Preguntas Frecuentes</a>
+<a class="hover:text-primary hover:underline transition-all focus:ring-2 focus:ring-primary rounded-sm px-1" href="#ubicacion">Contacto</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-sm">
+                © 2024 Peluquería Canina. Todos los derechos reservados.
+            </p>
+</div>
+</footer>
+</body></html>
