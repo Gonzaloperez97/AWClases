@@ -1,0 +1,28 @@
+comandos Node
+
+una sola vez:
+
+- instalar nodejs version estable LTS
+- verificar si se instalo con:
+
+- verificar version:
+node -v 
+
+- verificar version de npm:
+npm -v
+
+- instalar pnpm (en el aula)
+npm i -g pnpm
+
+En cada proyecto 
+
+-Inicializar proyecto en la ruta que quiero inicializar 
+el desarrollo pn init 
+(crea el documento package.json)
+
+- instalar paquete
+pn add five-server
+
+- creacion de .gitignore para ignorar node_modules y no se suba el repo ( no le hacemos seguimiento)
+- para volver a instalar lo que figura en package.json:
+pn install
