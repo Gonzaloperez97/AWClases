@@ -1,0 +1,64 @@
+/*
+
+*/
+
+/*
+selector{
+ propiedad1:valor;
+ propiedad2:valor;
+
+}
+ 
+/*selector universal*/
+*{
+  
+}
+
+ /*
+ selectores de Tipo
+ */
+
+ body{
+    background-color: aqua; 
+ }
+
+ header{
+   background-color: #ffff00;
+ }
+
+ a{
+  color: #000000;
+  text-decoration: none;
+ }
+
+/*.vinculos{
+  color: #222222;
+ }
+  */
+
+nav a {
+  color: #222;
+}
+
+.vinculos a {
+  color: #222;
+}
+
+.encabezado-principal{
+background-color: #ccc;
+}
+
+.contenido-principal{
+  background-color: #222222 ;
+}
+
+.pie-principal{
+background-color: #000000;
+}
+
+/* Selector ID 
+#contacto{
+  background-color: #222222;
+}
+*/
+

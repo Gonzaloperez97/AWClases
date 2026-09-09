@@ -17,6 +17,8 @@ npm i -g pnpm
 En cada proyecto 
 
 -Inicializar proyecto en la ruta que quiero inicializar 
+https://pnpm.io/es/
+https://www.npmjs.com/
 el desarrollo pn init 
 (crea el documento package.json)
 
