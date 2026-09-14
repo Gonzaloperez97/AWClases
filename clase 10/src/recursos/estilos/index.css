@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+/* genericos */
+
+/* reset */
+html, body , h1, h2, h3, ul{
+    padding: 0;
+    margin: 0;
+}
+
+/* tipo */
+body{
+    background-color: #eeeeee;
+}
+a{
+    text-decoration: none;
+    color: #380716;
+}
+
+/* clase */
+.cabecera-principal{
+width: 100%;
+height: 80px;
+background-color: #a7a7a7;
+padding: 5px 10px 20px 10px;
+border-bottom: 2px solid #222222 ;
+}
+
+.cabecera-principal nav{
+    background-color: #777777;
+}
+
+
+.contenido-principal{
+
+     padding: 10px 20px;
+
+}
+
+.contenido-principal form{
+    width: 500px;
+}
+
+.contenido-principal form input{
+    display: block;
+    width: 100%;
+}
+
+
+.pie-principal{
+
+    background-color: #a7a7a7;
+    padding: 10px;
+    width: 100%;
+    height: 100px ;
+
+}
