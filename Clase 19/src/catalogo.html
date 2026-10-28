@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas - Catálogo</title>
+    <link rel="stylesheet" href="./recursos/estilos/index.css">
+    <!--
+    1er atributo -> defer
+    2do atributo -> type="module"
+    -->
+    <script type="module" src="recursos/js/index.js"></script>
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <a href="./index.html" aria-label="Vínculo al inicio">
+            <img src="./recursos/imagenes/mascotas.png" alt="Logo huellitas">
+        </a>
+        <button class="boton-menu" aria-expanded="false">Menu</button>
+        <nav class="vinculos">
+            <a href="./index.html">
+                Inicio
+            </a>
+            <a href="./catalogo.html">
+                Catálogo
+            </a>
+            <a href="./contacto.html">
+                Contacto
+            </a>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <h1>Catálogo</h1>
+        <section>
+            <h2>Productos</h2>
+            <button id="boton-evento">Evento</button>
+            <dialog id="dialogo">
+                <h2>Evento</h2>
+                <p>
+                    Próximamente más novedades de Huellitas.
+                </p>
+                <form method="dialog">
+                    <button>Cerrar</button>
+                </form>
+            </dialog>
+            <!-- div como contenedor de articulos -->
+            <div id="contenedor-productos">
+                <article>
+                    <h3>Correa de cuero</h3>
+                    <picture>
+                        <img src="./recursos/imagenes/productos/correa-perro.jpg" alt="Correa de cuero para perro">
+                        <!-- <source media="(min-width: )" srcset="" sizes=""> -->
+                    </picture>
+                    <p>
+                        Correa de cuero extensible
+                    </p>
+                    <ul>
+                        <li>
+                            Talles S M L
+                        </li>
+                        <li>
+                            Precio $ 10000
+                        </li>
+                    </ul>
+                    <button>Añadir al carro</button>
+                </article>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="pie-principal">
+        <ul>
+            <li>
+                <a href="https://instagram.com/huellitas">
+                    @huellitas
+                </a>
+            </li>
+            <li>
+                Caseros 100. Bº Centro. Córdoba Capital
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
